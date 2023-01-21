@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="60" height="12" viewBox="0 0 60 12">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        font-size: 12px;
+      }
+
+      .cls-2 {
+        fill: #8d8d8d;
+        font-family: "Quicksand-Medium";
+      }
+    </style>
+  </defs>
+  <text y="9" class="cls-1"><tspan class="cls-2">We Accept</tspan></text>
+</svg>

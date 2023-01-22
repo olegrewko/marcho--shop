@@ -1077,7 +1077,7 @@ text-transform: uppercase;
       // clip: rect(0 0 0 0);
       // position: absolute;
       &:checked + .filter-color__check{
-        background-color: black;
+        background-image: url(../img/checkmark.png);
 
       }
     }

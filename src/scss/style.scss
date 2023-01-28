@@ -1554,6 +1554,10 @@ text-transform: uppercase;
 
 .product-slide{
   display: flex;
+  .slick-vertical .slick-slide{
+    height: 140px;
+    margin-bottom: 30px;
+  }
   &__thumb{
     width: 140px;
     margin-right: 40px;
@@ -1566,7 +1570,7 @@ text-transform: uppercase;
     img{
       height: 140px;
       width: 140px;
-      object-fit: contain;
+      object-fit: cover;
     }
   }
   &__big{
@@ -1588,6 +1592,7 @@ text-transform: uppercase;
       margin-bottom: 35px;
       label{
         margin-right: 10px;
+        display: inline-block;
       }
 		}
     &__color-input{
@@ -1602,14 +1607,15 @@ text-transform: uppercase;
       width: 24px;
       height: 24px;
       cursor: pointer;
-      border: 1px solid #ececec;
+      border: 1px solid #ccccce;
       position: relative;
       display: inline-block;
-      &::before{
-        content: '';
+      span{
         position: absolute;
+        display: inline-block;
+
         width: 16px;
-        height: 15px;
+        height: 16px;
         background-color: red;
         top: 3px;
         left: 3px;
@@ -1627,10 +1633,23 @@ text-transform: uppercase;
 		&__size {
       margin-bottom: 35px;
       label{
+        margin-right: 10px;
 
       }
 		}
-
+     &__size-input{
+      @extend %checkbox-hidden;
+      &:checked{
+        & + .product-filter__size-checkbox{
+          border-color: $accent-color;
+        }
+      }
+    }
+    &__size-checkbox{
+      padding: 4px 12px;
+      border: 1px solid #ccccce;
+      display: inline-block;
+    }
 		// .product-filter__color-title
 
 		&__color-title {

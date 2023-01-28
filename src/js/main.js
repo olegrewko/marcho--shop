@@ -19,11 +19,34 @@ $(function () {
 
   });
   $('.slider-dots').slick({
+    asNavFor: '.header__slider',
     slidesToShow: 4,
-    slidesToScroll: 4,
-    asNavFor: '.header__slider'
+    slidesToScroll: 4
+
 
   });
+
+   $('.product-slide__thumb').slick({
+    asNavFor: '.product-slide__big',
+    focusOnSelect: true,
+    vertical: true,
+    draggable: false,
+    slidesToShow: 4,
+    slidesToScroll: 1
+
+
+  });
+
+  $('.product-slide__big').slick({
+
+        asNavFor: '.product-slide__thumb',
+        draggable: false,
+
+        fade: true,
+        arrows: false
+
+  });
+
   $(".star").rateYo({
     rating: 3.6,
     starWidth: '17px',
@@ -45,6 +68,8 @@ $(function () {
 
 
   });
+
+
 
 
   $('.celect-style').styler();

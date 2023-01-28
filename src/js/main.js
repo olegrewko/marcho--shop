@@ -72,7 +72,7 @@ $(function () {
 
 
 
-  $('.celect-style').styler();
+  $('.celect-style, .product-one__item-num').styler();
 
   $('.shop-content__filter-btn').on('click', function(){
 

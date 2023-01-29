@@ -1917,7 +1917,7 @@ text-transform: uppercase;
 
 }
 .blog-page{
-  padding: 120px 0;
+  padding: 120px 0 60px;
   &__inner{
     display: flex;
     justify-content: space-between;
@@ -1929,6 +1929,22 @@ text-transform: uppercase;
   }
   &__aside{
     width: 370px;
+  }
+  &__img{
+    max-width: 770px;
+    height: 450px;
+    object-fit: cover;
+    display: block;
+  }
+  &__item-title{
+    color: $title;
+
+  }
+
+  &__item-box{
+    border: 1px solid #ececec;
+    border-top: none;
+    padding: 40px;
   }
 }
 

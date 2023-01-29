@@ -88,6 +88,16 @@ $(function () {
     $('.product-item').removeClass('product-item--list');
   });
 
+
+
+  $('.product-tabs__top-item').on('click', function(e){
+    e.preventDefault;
+    $('.product-tabs__top-item').removeClass('product-tabs__top-item--active');
+    $(this).addClass('product-tabs__top-item--active');
+    $('.product-tabs__content-item').removeClass('product-tabs__content-item--active');
+    $($(this).attr('href')).addClass('product-tabs__content-item--active');
+  });
+
   function getTimeRemaining(endtime) {
     const total = Date.parse(endtime) - Date.parse(new Date());
     const seconds = Math.floor((total / 1000) % 60);

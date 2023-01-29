@@ -1807,10 +1807,17 @@ text-transform: uppercase;
 		&__rating {
       margin-bottom: 30px;
 		}
+    &__rating-title{
+      color: $title;
+      margin-right: 50px;
+    }
 
-		// .comments-form__input
+		&__label{
+      margin-right: 25px;
+    }
 
 		&__input {
+      @extend %checkbox-hidden;
 		}
 
 		// .comments-form__radio

@@ -1916,7 +1916,21 @@ text-transform: uppercase;
   }
 
 }
+.blog-page{
+  padding: 120px 0;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content{
+    width: 770px;
+    margin-right: 30px;
 
+  }
+  &__aside{
+    width: 370px;
+  }
+}
 
 
 

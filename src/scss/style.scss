@@ -1936,9 +1936,28 @@ text-transform: uppercase;
     object-fit: cover;
     display: block;
   }
+  &__item{
+    margin-bottom: 60px;
+    &.blog-page__item-box--no-image{
+      border-top: 1px solid #ececec;
+      box-shadow: #b3b3b3;
+    }
+  }
   &__item-title{
     color: $title;
-
+    font-size: 22px;
+    @extend %roboto-700;
+    margin-bottom: 20px;
+    transition: all 0.3s;
+    &:hover{
+      color: $accent-color;
+      cursor: pointer;
+    }
+  }
+  &__link{
+    display: block;
+    color: inherit;
+    font-family: inherit;
   }
 
   &__item-box{

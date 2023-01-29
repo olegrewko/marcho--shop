@@ -3,10 +3,15 @@ $(function () {
     infinite: true,
     dots: true,
     fade: true,
-    prevArrow: '<img class="slider-arrows slider-arrow--left" src="img/arrow-left.svg" alt="">',
-    nextArrow: '<img class="slider-arrows slider-arrow--right" src="img/arrow-right.svg" alt="">'
+    prevArrow: '<button type = "button" class = "slick-prev">lrft  </ button>',
+    nextArrow: '<button type = "button" class = "slick-next"> Next </ button>'
 
 
+  });
+  $('.blog-page__slider').slick({
+
+    prevArrow: '<button type = "button" class = "slick-prev">lrft  </ button>',
+    nextArrow: '<button type = "button" class = "slick-next"> Next </ button>'
   });
   $('.product__slider').slick({
     infinite: true,

@@ -2038,7 +2038,67 @@ text-transform: uppercase;
 		&__social {
 		}
 }
+.blog-one{
+  h4{
+    color: $title;
+    font-size: 22px;
+    @extend %roboto-700;
+    margin: 25px 0;
+  }
+  p{
+    margin: 25px 0;
+  }
+  blockquote{
+    background-color: $bg;
+    border-left: 3px solid $accent-color;
+    color: $title;
+    @extend %roboto-400;
+    font-size: 20px;
+    margin: 25px 0;
+    padding: 35px;
 
+  }
+  &__img-left{
+    float: left;
+    margin-right: 30px;
+  }
+  &__text{
+    border: 1px solid #ececec;
+    border-top: none;
+    padding: 30px;
+  }
+  &__info{
+    display: flex;
+    margin-bottom: 20px;
+  }
+  &__info-link{
+    margin-right: 30px;
+    padding-left: 20px;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 3px;
+      background-image: url('../img/Calender.svg');
+      width: 16px;
+      height: 16px;
+
+    }
+  }
+  &__info-link--comment::before{
+
+      background-image: url('../img/Calender.svg');
+      top: 0;
+
+
+  }
+  &__info-link--admin::before{
+
+      background-image: url('../img/Calender.svg');
+    top: 0;
+  }
+}
 
 
 

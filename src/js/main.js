@@ -10,9 +10,11 @@ $(function () {
   });
   $('.blog-page__slider').slick({
 
-    prevArrow: '<button type = "button" class = "slick-prev">lrft  </ button>',
-    nextArrow: '<button type = "button" class = "slick-next"> Next </ button>'
+    prevArrow: '<img  class = "slick-prev" src="img/left-arrow.svg">',
+    nextArrow: '<img class = "slick-next" src="img/right-arrow.svg">',
+    infinite: false
   });
+
   $('.product__slider').slick({
     infinite: true,
     autoplay: true,

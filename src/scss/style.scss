@@ -2099,7 +2099,39 @@ text-transform: uppercase;
     top: 0;
   }
 }
+.map{
+  padding: 120px 0;
+}
+#map {
 
+  height: 400px; /* The height is 400 pixels */
+  width: 100%; /* The width is the width of the web page */
+  margin: 0 auto;
+}
+.contact{
+  margin-bottom: 120px;
+  &__inner{
+    display: flex;
+
+  }
+  &__info{
+    min-width: 370px;
+    margin-right: 30px;
+  }
+  &__info-title{
+    font-size: 48px;
+    line-height: 58px;
+    @extend %roboto-700;
+    color: $title;
+  }
+  &__info-text{
+    margin-top: 55px;
+  }
+  &__info-phone{
+    display: block;
+    margin-top: 55px;
+  }
+}
 
 
 

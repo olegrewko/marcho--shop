@@ -111,5 +111,19 @@ img {
     }
   }
 }
+@media (max-width: 650px) {
+  .title{
+    font-size: 40px;
+    line-height: 45;
+  }
+
+}
+@media (max-width: 450px) {
+  .title{
+    font-size: 30px;
+    line-height: 35;
+  }
+
+}
 
 

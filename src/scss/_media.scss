@@ -29,6 +29,11 @@
 
 }
 @media (max-width: 1000px) {
+    .video-fashion{
+      &__inner{
+        display: block;
+      }
+    }
    .categories {
   &__items {
 
@@ -39,6 +44,7 @@
   &__item{
     &:nth-child(1){
       grid-row: auto;
+      background-position: center top;
     }
     &:nth-child(2){
       grid-column: auto;
@@ -51,7 +57,7 @@
 @media (max-width: 860px) {
   .categories {
   &__items {
-
+    // min-height: 385px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     gap: 10px;
@@ -130,6 +136,17 @@
 }
 }
 @media (max-width: 500px) {
+    .categories {
+      gap: 10px;
+  &__items {
+    min-height: 520px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  &__item {
+   padding: 15px 10px;
+  }
+
+}
   .menu{
     order: 0;
   }

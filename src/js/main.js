@@ -1,4 +1,11 @@
 $(function () {
+  $('.menu__btn').on('click', function(){
+    $('.menu__list').toggleClass('menu__list--active');
+  })
+  $('.footer-top__title').on('click', function(){
+    $(this).siblings().slideToggle();
+    $(this).toggleClass('active');
+  })
   $('.top-slider__inner').slick({
     infinite: true,
     dots: true,

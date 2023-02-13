@@ -10,8 +10,8 @@ $(function () {
     infinite: true,
     dots: true,
     fade: true,
-    prevArrow: '<button type = "button" class = "slick-prev">lrft  </ button>',
-    nextArrow: '<button type = "button" class = "slick-next"> Next </ button>'
+    prevArrow: '<button type = "button" class = "slick-prev"></ button>',
+    nextArrow: '<button type = "button" class = "slick-next"></ button>'
 
 
   });
@@ -57,7 +57,15 @@ $(function () {
         draggable: false,
 
         fade: true,
-        arrows: false
+        arrows: false,
+          responsive: [
+          {
+              breakpoint: 1000,
+              settings: {
+                  draggable: true
+              }
+          }
+        ]
 
   });
 

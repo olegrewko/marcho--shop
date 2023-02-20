@@ -324,17 +324,19 @@ left: 0;
  right: 0;
 }
 &__item {
-  padding: 60px 30px;
+  padding: 30px 10px;
   width: 370px;
 }
 &__item-title {
   margin: 35px 0 10px;
   color: $title;
-  font-size: 22px;
-  @extend %roboto-400;
+  font-size: 14px;
+  @extend %roboto-700;
 }
 &__text {
-
+   color: $title;
+  font-size: 10px;
+  @extend %roboto-400;
 }
 }
 .categories-info {

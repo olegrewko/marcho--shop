@@ -6,44 +6,37 @@ html {
 *::before {
   box-sizing: inherit;
 }
-// .wrapper {
 
-// 	display: flex;
-// 	flex-direction: column;
-
-// 	min-height: 100%;
-//   max-width: 1920px;
-
-// }
-
-// .main {
-// 	flex: 1 1 auto;
-// }
-// .footer {
-// 	flex: 0 0 auto;
-
-// }
 html,
 body {
   height: 100%;
 }
 
 body {
-  font-size: 16px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
   line-height: 22px;
   background-color: #fff;
   color: $default;
-  @extend %quicksand-500;
+
   display: flex;
   flex-direction: column;
 
 }
 .main {
-flex: 1 1 auto;
-//flex-grow: 1;
+// flex: 1 1 auto;
+flex-grow: 1;
 }
-ul {
+h1,h2,h3,h4,h5,h6,p {
    margin: 0;
+  padding: 0;
+
+}
+ul,
+li {
+  margin: 0;
   padding: 0;
   list-style: none;
   text-decoration: none;
@@ -52,11 +45,11 @@ a {
   text-decoration: none;
   background-color: transparent;
 
-  font-size: 14px;
+  font-size: 12px;
   line-height: 22px;
 
   color: $default;
-  @extend %quicksand-500;
+
 }
 img {
   border-style: none;
@@ -67,6 +60,18 @@ img {
   margin: 0 auto;
   padding: 0 15px;
 
+}
+.container-product {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+
+}
+.container-video {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 .pagination{
   display: flex;
@@ -111,19 +116,19 @@ img {
     }
   }
 }
-@media (max-width: 650px) {
-  .title{
-    font-size: 40px;
-    line-height: 45;
-  }
+// @media (max-width: 650px) {
+//   .title{
+//     font-size: 40px;
+//     line-height: 45;
+//   }
 
-}
-@media (max-width: 450px) {
-  .title{
-    font-size: 30px;
-    line-height: 35;
-  }
+// }
+// @media (max-width: 450px) {
+//   .title{
+//     font-size: 30px;
+//     line-height: 35;
+//   }
 
-}
+// }
 
 

@@ -1,4 +1,10 @@
+
 @media (max-width: 1200px) {
+   .product-item{
+      &__img-box{
+        height: 210px;
+      }
+    }
   .header{
     &__inner{
       padding-right: 10px;
@@ -7,21 +13,27 @@
   .top-slider {
 
   &__img {
-    width: 90%;
-    padding-left: 15px;
+    max-width: 1025px;
+    width: 100%;
+    padding-left: 5px;
   }
     &__title {
-    max-width: 770px;
+    max-width: 170px;
     width: 100%;
-    font-size: 28px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
     line-height: 32px;
-    color: black;
-    @extend %roboto-400;
+    color: $default;
+    margin-top: 10px;
     margin-bottom: 5px;
   }
     &__text {
+    font-family: 'Montserrat';
     font-size: 12px;
-    max-width: 470px;
+    max-width: 170px;
     margin-bottom: 15px;
 
   }
@@ -46,7 +58,7 @@
 @media (max-width: 1000px) {
     .product-item{
       &__img-box{
-        height: 300px;
+        height: 210px;
       }
     }
     .video-fashion{
@@ -64,22 +76,23 @@
    .categories {
   &__items {
 
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     gap: 10px;
   }
-  &__item{
-    &:nth-child(1){
-      grid-row: auto;
-      background-position: center top;
-    }
-    &:nth-child(2){
-      grid-column: auto;
-      background-position: center right;
-    }
-  }
 
 }
+		.product-tabs-new-design__content-item {
+      display: none;
+      &.product-tabs-new-design__content-item--active{
+
+        display: grid;
+        grid-template-columns: repeat(2, 360px);
+        grid-template-rows: repeat(3, 250px);
+        gap: 20px;
+        background-color: #fff;
+      }
+      		}
 .blog-page {
     &__items {
       display: grid;
@@ -151,9 +164,17 @@
  }
 }
 @media (max-width: 860px) {
+.product-tabs__content-item.product-tabs__content-item--active {
+  text-align: center;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 5px;
+}
      .product-item{
       &__img-box{
-        height: 300px;
+        height: 210px;
       }
     }
      .product{
@@ -162,11 +183,12 @@
       grid-gap: 10px;
       }
       &__img-box{
-        height: 300px;
+        height: 270px;
       }
 
     }
   .categories {
+
   &__items {
     // min-height: 385px;
     grid-template-columns: repeat(2, 1fr);
@@ -182,15 +204,16 @@
     transform: translateY(-200%);
     position: absolute;
     width: 100%;
-    top: 150px;
+    top: 70px;
     left: 0;
     flex-direction: column;
     align-items: center;
     z-index: 5;
     transition: all .4s;
     cursor: pointer;
-    background-color: #fff;
+    background-color: $bg;
     &.menu__list--active{
+
      transform: translateY(0);
      transition: all .4s;
     }
@@ -279,13 +302,7 @@
    .contact__info-title{
     width: 100%;
 }
-//   .shop-content{
-//   width: 100%;
-//   &__inner{
-//     display: grid;
-//     grid-template-columns: repeat(2, 1fr);
-// }
-// }
+
  .footer-top {
 
   &__contact{
@@ -300,9 +317,33 @@
   gap: 5px;
 }
 }
-@media (max-width: 620px) {
+@media (max-width: 790px) {
+		.product-tabs-new-design__content-item {
+      display: none;
+      &.product-tabs-new-design__content-item--active{
+
+        display: grid;
+        grid-template-columns: repeat(1, 360px);
+        grid-template-rows: repeat(6, 250px);
+        gap: 20px;
+        background-color: #fff;
+      }
+      		}
+ }
+@media (max-width: 680px) {
+      .top-slider {
+
+  &__img {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  &__content{
+    flex-wrap: wrap;
+  }
+}
    .product{
-    padding: 50px 0;
+    padding: 30px 0;
       &__items{
       grid-template-columns: repeat(1, 1fr);
       grid-gap: 10px;
@@ -343,7 +384,7 @@
     .categories {
       gap: 10px;
   &__items {
-    min-height: 520px;
+    // min-height: 320px;
     grid-template-columns: repeat(1, 1fr);
   }
   &__item {
@@ -407,10 +448,16 @@
   margin-left: 0;
  }
  .product-tabs__top-item{
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+
   display: block;
+  text-align: center;
   margin-bottom: 20px;
   + .product-tabs__top-item{
-    margin-left: 0;
+    margin-left: 10px;
   }
  }
 }
@@ -440,13 +487,13 @@
 
 }
 @media (max-width: 450px) {
-     .top-slider {
-     &__item {
-    .top-slider__img{
-    display: none;
-  }
-  }
-     }
+//     .top-slider {
+
+//   &__img {
+//     width: 100%;
+//     margin-top: 20px;
+//   }
+// }
    .footer-top{
     &__form{
       flex-wrap: wrap;

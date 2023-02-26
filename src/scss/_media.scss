@@ -2,7 +2,11 @@
 @media (max-width: 1200px) {
    .product-item{
       &__img-box{
-        height: 210px;
+        height: 280px;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
     }
   .header{
@@ -56,11 +60,7 @@
 }
 }
 @media (max-width: 1000px) {
-    .product-item{
-      &__img-box{
-        height: 210px;
-      }
-    }
+
     .video-fashion{
       &__inner{
         display: block;
@@ -164,6 +164,15 @@
  }
 }
 @media (max-width: 860px) {
+.double{
+  height: 1000px;
+&__inner{
+  flex-wrap: wrap;
+}
+&__right{
+  margin-top: 200px;
+}
+}
 .product-tabs__content-item.product-tabs__content-item--active {
   text-align: center;
   margin: 0 auto;
@@ -174,7 +183,11 @@
 }
      .product-item{
       &__img-box{
-        height: 210px;
+        height: 280px;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
     }
      .product{

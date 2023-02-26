@@ -62,7 +62,14 @@ img {
 
 }
 .container-product {
-  max-width: 900px;
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+
+}
+.container-double {
+  max-width: 1700px;
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;

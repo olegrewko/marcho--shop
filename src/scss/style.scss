@@ -289,7 +289,7 @@ margin-top: 20px;
 		}
 }
 .top-slider {
-  background-color: $bg;
+  background-color: #feefe2;
   padding-top: 0px;
   &__wrap{
      max-width: 175px;
@@ -312,7 +312,8 @@ margin-top: 20px;
     font-size: 28px;
     line-height: 32px;
     color: $default;
-    margin-bottom: 15px;
+    margin-top: 20px;
+    margin-bottom: 10px;
   }
   &__text {
     max-width: 270px;
@@ -420,7 +421,7 @@ left: 0;
 &__item {
   display: flex;
   justify-content: center;
-  // align-items: center;
+  align-items: center;
   padding: 0px 0px;
 
   width: 370px;
@@ -680,6 +681,8 @@ text-transform: uppercase;
         text-align: left;
         &:hover{
           .product-item__link-box{
+           max-width: 90px;
+          width: 100%;
           transform: translateY(-100%);
           }
         }
@@ -728,7 +731,8 @@ text-transform: uppercase;
          }
         .product-item__link-box{
           background-color: transparent;
-          width: 110px;
+          max-width: 90px;
+          width: 100%;
           box-shadow: none;
 
           bottom: auto;
@@ -983,7 +987,7 @@ text-transform: uppercase;
 
 
 .blog {
-  padding: 100px 0 50px;
+  padding: 100px 0 200px;
   background-color: $bg;
 &__title{
   text-align: left;
@@ -994,7 +998,7 @@ text-transform: uppercase;
   line-height: 25px;
   color: $title;
   margin-top: 0;
-  margin-bottom: 0px;
+  margin-bottom: 20px;
 
 }
 &__text{
@@ -2084,7 +2088,7 @@ text-transform: uppercase;
     font-style: normal;
     font-weight: 600;
     font-size: 10px;
-    line-height: 10;
+    line-height: 10px;
     color: $accent-color;
     border: 1px solid $accent-color;
     border-radius: 4px;

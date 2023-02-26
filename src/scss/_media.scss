@@ -74,6 +74,18 @@
       }
     }
    .categories {
+     &__title{
+     text-align: center;
+
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 25px;
+  color: $title;
+  margin-top: 0;
+  margin-bottom: 0px;
+    }
   &__items {
 
     grid-template-columns: repeat(3, 1fr);
@@ -201,7 +213,19 @@
 
     }
   .categories {
+   &__title{
+     text-align: center;
 
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 25px;
+  color: $title;
+  margin-top: 0;
+  margin-bottom: 0px;
+  background-color: #fff;
+    }
   &__items {
     // min-height: 385px;
     grid-template-columns: repeat(2, 1fr);

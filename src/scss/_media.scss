@@ -392,6 +392,7 @@
   }
   .product-item{
     max-width: 100%;
+    margin-right: 15px;
     &__img{
       width: 100%;
     }
@@ -527,6 +528,9 @@
 
 @media (max-width: 620px) {
 
+   .product-item.product-item--list{
+    flex-wrap: wrap;
+   }
   .footer-bottom {
     justify-content: center;
     &__copy{

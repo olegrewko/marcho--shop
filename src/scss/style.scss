@@ -1136,28 +1136,37 @@ text-transform: uppercase;
 }
 .top {
 
+  &__title{
+      font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
 
+  }
   &__container {
   max-width: 1700px;
-  height: 333px;
+  height: 90px;
   margin: 0 auto;
   	// background-image: url('../img/Image_Bg.jpg');
-     background-repeat: no-repeat;
-    background-position: top center;
-    background-size: cover;
-    padding: 120px 0 120px;
+    //  background-repeat: no-repeat;
+    // background-position: top center;
+    // background-size: cover;
+    padding: 20px 0 20px;
+    display: flex;
+    justify-content: center;
     text-align: center;
+    background-color: #edf1f4;
   }
 }
 .bredcrumbs {
     display: inline-flex;
     justify-content: center;
-    padding-left: 25px;
+    padding-left: 10px;
     position:relative;
     &::before {
       content: '';
       position: absolute;
-      background-image: url('../img/home_icon.svg');
+      // background-image: url('../img/home_icon.svg');
       width: 16px;
       height: 16px;
       left: 0;
@@ -1171,12 +1180,12 @@ text-transform: uppercase;
     }
     &__item {
      color: #727272;
-     padding-right: 40px;
+     padding-right: 10px;
      position:relative;
      &::after {
       content: '';
       position: absolute;
-      background-image: url('../img/angle_right.svg');
+      // background-image: url('../img/angle_right.svg');
       background-repeat: no-repeat;
       width: 9px;
       height: 10px;
@@ -1246,7 +1255,7 @@ text-transform: uppercase;
 
   .shop {
     background-color: $bg;
-    padding: 120px 0 120px;
+    padding: 20px 0 20px;
 		// .shop__inner
 
 		&__inner {
@@ -1261,6 +1270,7 @@ text-transform: uppercase;
       max-width: 270px;
       width: 100%;
       margin-right: 15px;
+      background-color: #fff;
 		}
 
 
@@ -1553,13 +1563,14 @@ text-transform: uppercase;
 
   }
   &__filter{
-    // max-width: 600px;
-    // width: 100%;
-    border: 1px solid #ececec;
-    padding: 20px 25px 20px 30px;
-    margin-bottom: 40px;
+    // max-width: 800px;
+    width: 100%;
+    background-color: #f6f6f6;
+    border: 0px solid #ececec;
+    padding: 10px 10px ;
+    margin-bottom: 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
   }
   &__filter-buttons{

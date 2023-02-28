@@ -421,6 +421,16 @@
 
 }
 @media (max-width: 500px) {
+   .shop {
+    padding: 120px 0 120px;
+		// .shop__inner
+
+		&__inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+		}
+  }
     .categories {
       gap: 10px;
   &__items {
@@ -523,12 +533,14 @@
     width: 100%;
     text-align: center;
   }
+
     &__accept-img{
       margin-left: 15px;
     }
   }
 
 }
+
 @media (max-width: 450px) {
 //     .top-slider {
 
@@ -553,7 +565,7 @@
     &__copy{
     width: 100%;
     text-align: center;
-  }
+    }
   }
       .related__items{
   display: grid;
@@ -562,5 +574,7 @@
 }
 
 }
+
+
 
 

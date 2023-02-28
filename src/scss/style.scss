@@ -1254,7 +1254,7 @@ text-transform: uppercase;
   }
 
   .shop {
-    background-color: $bg;
+    background-color: #fcfcfc;
     padding: 20px 0 20px;
 		// .shop__inner
 
@@ -1284,16 +1284,19 @@ text-transform: uppercase;
 
 		&__item {
     padding: 0px 0px 0px;
-    border: 1px solid #ececec;
+    border: 0px solid #ececec;
 		}
 
 		// .filter__title
 
 		&__title {
+        font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
       text-transform: uppercase;
-      color: $title;
-      font-size: 22px;
-      @extend %roboto-400;
+      color: $accent;
+      font-size: 14px;
+
 		}
 }
 .filter-search {
@@ -1498,7 +1501,7 @@ text-transform: uppercase;
   &__label {
     display: block;
     cursor: pointer;
-    margin-bottom: 15px;
+    margin-bottom: 0px;
     &:last-child{
       margin-bottom: 0;
     }
@@ -1511,8 +1514,9 @@ text-transform: uppercase;
     }
   }
   &__checkbox {
-    background-color: #e1e4e9;
-    color: $title;
+    background-color: #fff;
+    // background-color: #e1e4e9;
+    // color: $title;
     padding: 16px 20px;
     display: flex;
     justify-content: space-between;
@@ -1566,7 +1570,7 @@ text-transform: uppercase;
     // max-width: 800px;
     width: 100%;
     background-color: #f6f6f6;
-    border: 0px solid #ececec;
+
     padding: 10px 10px ;
     margin-bottom: 10px;
     display: flex;

@@ -708,7 +708,8 @@ text-transform: uppercase;
         .product-item__img-box{
         margin-top: 0px;
         height: 280px;
-
+        max-width: 270px;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1588,6 +1589,7 @@ text-transform: uppercase;
     align-items: center;
   }
   &__filter-btn{
+    outline: none;
     padding: 0;
     border: none;
     background-color: transparent;

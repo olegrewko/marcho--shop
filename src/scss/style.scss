@@ -3,52 +3,52 @@
 @import "fonts";
 @import "global";
 
-// @font-face {
-//   font-family: 'Montserrat';
-//   font-style: normal;
-//   font-weight: 800;
-//   src: local('Montserrat-ExtraBold'),
-//    url('../fonts/Montserrat-ExtraBold.woff2') format('woff2'),
-//    url('../fonts/Montserrat-ExtraBold.woff') format('woff');
-//   font-display: swap;
-// }
-// @font-face {
-//   font-family: 'Montserrat';
-//   font-style: normal;
-//   font-weight: 700;
-//   src: local('Montserrat-Bold'),
-//    url('../fonts/Montserrat-Bold.woff2') format('woff2'),
-//    url('../fonts/Montserrat-Bold.woff') format('woff');
-//   font-display: swap;
-// }
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Montserrat-ExtraBold'),
+   url('../fonts/Montserrat-ExtraBold.woff2') format('woff2'),
+   url('../fonts/Montserrat-ExtraBold.woff') format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat-Bold'),
+   url('../fonts/Montserrat-Bold.woff2') format('woff2'),
+   url('../fonts/Montserrat-Bold.woff') format('woff');
+  font-display: swap;
+}
 
-// @font-face {
-//   font-family: 'Montserrat';
-//   font-style: normal;
-//   font-weight: 600;
-//   src: local('Montserrat-SemiBold'),
-//    url('../fonts/Montserrat-SemiBold.woff2') format('woff2'),
-//    url('../fonts/Montserrat-SemiBold.woff') format('woff');
-//   font-display: swap;
-// }
-// @font-face {
-//   font-family: 'Montserrat';
-//   font-style: normal;
-//   font-weight: 500;
-//   src: local('Montserrat-Medium'),
-//    url('../fonts/Montserrat-Medium.woff2') format('woff2'),
-//    url('../fonts/Montserrat-Medium.woff') format('woff');
-//   font-display: swap;
-// }
-// @font-face {
-//   font-family: 'Montserrat';
-//   font-style: normal;
-//   font-weight: 400;
-//   src: local('Montserrat-Regular'),
-//    url('../fonts/Montserrat-Regular.woff2') format('woff2'),
-//    url('../fonts/Montserrat-Regular.woff') format('woff');
-//   font-display: swap;
-// }
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Montserrat-SemiBold'),
+   url('../fonts/Montserrat-SemiBold.woff2') format('woff2'),
+   url('../fonts/Montserrat-SemiBold.woff') format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Montserrat-Medium'),
+   url('../fonts/Montserrat-Medium.woff2') format('woff2'),
+   url('../fonts/Montserrat-Medium.woff') format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat-Regular'),
+   url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+   url('../fonts/Montserrat-Regular.woff') format('woff');
+  font-display: swap;
+}
 
 
 .product-tabs__content {
@@ -975,11 +975,11 @@ line-height: 12px;
 position: absolute;
 top: 0px;
 right: 10px;
-&:hover{
-  .product-item--sale{
+&::hover{
+
  background-color: $accent;
  transition: all .3s;
-}
+
 }
       }
     }
@@ -1284,7 +1284,7 @@ text-transform: uppercase;
 
 		&__item {
     padding: 0px 0px 0px;
-    border: 0px solid #ececec;
+    margin-bottom: 20px;
 		}
 
 		// .filter__title
@@ -1296,6 +1296,8 @@ text-transform: uppercase;
       text-transform: uppercase;
       color: $accent;
       font-size: 14px;
+      padding: 0 0 10px 5px;
+
 
 		}
 }
@@ -1410,18 +1412,15 @@ text-transform: uppercase;
 .irs--flat .irs-min, .irs--flat .irs-max {
     display: none;
 }
-.filter__item {
-  border: 1px solid #ececec;
-}
+
 
 .filter-color {
   &__label {
-    padding-bottom: 20px;
-    border-bottom: 1px solid #ececec;
+    padding: 10px 10px 10px 10px;
     display: flex;
     justify-content: space-between;
     & + .filter-color__label{
-      padding-top: 20px;
+      padding-top: 0px;
     }
     &:last-child{
       border-bottom: none;
@@ -1449,19 +1448,19 @@ text-transform: uppercase;
       cursor: pointer;
     }
   &__check--blue{
-    background-color: #00aeef;
+    background-color: #023549;
   }
   &__check--red{
-    background-color: #f52574;
+    background-color: #6e6d6e;
   }
   &__check--green{
-    background-color: #24d4ac;
+    background-color: #d45324;
   }
   &__check--orange{
-    background-color: #ff7e00;
+    background-color: #ad5702;
   }
   &__check--purple{
-    background-color: #923899;
+    background-color: #fff;
   }
   &__check--black{
     background-color: #000000;
@@ -1517,7 +1516,7 @@ text-transform: uppercase;
     background-color: #fff;
     // background-color: #e1e4e9;
     // color: $title;
-    padding: 16px 20px;
+    padding: 10px 10px 10px 10px;
     display: flex;
     justify-content: space-between;
   }

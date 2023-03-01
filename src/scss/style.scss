@@ -819,31 +819,31 @@ text-transform: uppercase;
           display: block;
         }
         .product-item__title{
-          font-family: 'Montserrat';
-          font-style: normal;
-
+          // order: -1;
+          text-align: left;
           font-weight: 700;
-          font-size: 14px;
+          font-size: 26px;
           color: $accent;
 
-          padding-top: 20px;
-          padding-bottom: 10px;
+          padding-top: 30px;
+          padding-bottom: 5px;
         }
         .product-item__price{
-          order: -1;
-          margin-left: -10px;
+          text-align: left;
+          margin-left: 0px;
         }
         .star{
-          margin-left: 10px;
+          margin-left: 0px;
         }
         .product-item__box{
           display: flex;
-          flex-wrap: wrap;
+          flex-direction: column;
+          // flex-wrap: wrap;
 
         }
         .product-item__wrapper-box{
-          padding: 30px 40px;
-          border: 1px solid #ececec;
+          padding: 10px 40px;
+          border: 0px solid #ececec;
 
         }
       }
@@ -927,20 +927,20 @@ text-transform: uppercase;
 
 
 
-		&__price {
-       display: flex;
-      justify-content: center;
-      align-items: center;
+		// &__price {
+    //    display: flex;
+    //   justify-content: center;
+    //   align-items: center;
 
-		}
+		// }
 
 		// .product-item__new-price
 
 		&__new-price {
-      margin-bottom: 5px;
-      padding-top: 5px;
+      margin-bottom: 15px;
+      padding-top: 15px;
       color: $title;
-      font-size: 12px;
+      font-size: 22px;
 		}
 
 		// .product-item__old-price

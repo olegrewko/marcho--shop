@@ -1642,13 +1642,14 @@ text-transform: uppercase;
    background-image: url(../img/arrow-left.svg);
  }
  .product-page{
-  padding: 120px 0 0px;
+  margin-top: 100px;
   // border-bottom: 1px solid #ececec;
  }
  .product-one{
-
+  margin-top: 100px;
   &__inner{
     display: flex;
+    justify-content: space-between;
   }
   &__box{
     display: flex;
@@ -1656,12 +1657,12 @@ text-transform: uppercase;
     margin-bottom: 30px;
   }
   &__slide{
-    max-width: 730px;
+    max-width: 570px;
     width: 100%;
     margin-right: 50px;
   }
   &__content{
-    max-width: 370px;
+    max-width: 500px;
     width: 100%;
   }
   &__title{
@@ -1846,7 +1847,7 @@ text-transform: uppercase;
 .product-slide{
   display: flex;
   .slick-vertical .slick-slide{
-    height: 140px;
+    height: 180px;
     margin-bottom: 30px;
   }
   &__thumb{
@@ -1854,23 +1855,23 @@ text-transform: uppercase;
     margin-right: 40px;
   }
   &__thumb-item{
-    width: 140px;
+    width: 180px;
     height: 140px;
     margin-bottom: 40px;
     cursor: pointer;
     img{
-      height: 140px;
+      height: 180px;
       width: 140px;
       object-fit: cover;
     }
   }
   &__big{
-    width: 560px;
-    height: 650px;
+    width: 370px;
+    height: 530px;
      img{
 
-      width: 560px;
-      height: 650px;
+      width: 370px;
+      height: 530px;
       object-fit: cover;
     }
   }

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -22,40 +23,49 @@
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
-    <header class="header">
+       <header class="header">
       <div class="container">
         <div class="header__inner">
-          <a class="logo" href="">
-            <img class="logo__img" src="img/logo.png" alt="" />
+          <a class="header__logo" href="index.html">
+            <img src="img/product/p324.png" alt="">
+            <h2 class="logo__title">Glee</h2>
           </a>
 
           <nav class="menu">
+            <button class="menu__btn">
+              <span></span>
+            </button>
+
             <ul class="menu__list">
               <li class="menu__list-item">
-                <a
-                  class="menu__list-link menu__list-link--active"
-                  href="index.html"
-                  >HOME</a
+                <a class="menu__list-link menu__list-link--active" href="index.html"
+                  >Home+</a
                 >
               </li>
               <li class="menu__list-item">
-                <a class="menu__list-link" href="#">SHAPE</a>
+                <a class="menu__list-link" href="shop.html">About</a>
               </li>
               <li class="menu__list-item">
-                <a class="menu__list-link" href="#">PAGE</a>
+                <a class="menu__list-link" href="page.html">Services</a>
               </li>
               <li class="menu__list-item">
-                <a class="menu__list-link" href="#">BLOG</a>
+                <a class="menu__list-link" href="blog.html">
+                  Pages+
+
+                </a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="blog.html">News</a>
               </li>
 
               <li class="menu__list-item">
-                <a class="menu__list-link" href="#">CONTACT</a>
+                <a class="menu__list-link" href="contact.html">Contact</a>
               </li>
             </ul>
           </nav>
 
           <div class="user-nav">
-            <a class="user-nav__link">
+            <a class="user-nav__link" href="login.html">
               <img class="user-nav__link-img" src="img/user.svg" alt="user" />
             </a>
             <a class="user-nav__link"
@@ -85,7 +95,7 @@
       <section class="top">
         <div
           class="top__container"
-          style="background-image: url('../img/Image_Bg.jpg')"
+
         >
           <div class="container">
             <h2 class="top-title">PRODUCT</h2>
@@ -109,7 +119,7 @@
               <div class="product-one__slide product-slide">
                 <div class="product-slide__thumb">
                   <div class="product-slide__thumb-item">
-                    <img src="img/product/1.jpg" alt="" />
+                    <img src="img/product/a1.png" alt="" />
                   </div>
                   <div class="product-slide__thumb-item">
                     <img src="img/product/2.jpg" alt="" />
@@ -117,13 +127,11 @@
                   <div class="product-slide__thumb-item">
                     <img src="img/product/3.jpg" alt="" />
                   </div>
-                  <div class="product-slide__thumb-item">
-                    <img src="img/product/4.jpg" alt="" />
-                  </div>
+
                 </div>
                 <div class="product-slide__big">
                   <div class="product-slide__big-item">
-                    <img src="img/product/1.jpg" alt="" />
+                    <img src="img/product/a1.png" alt="" />
                   </div>
                   <div class="product-slide__big-item">
                     <img src="img/product/2.jpg" alt="" />
@@ -131,9 +139,7 @@
                   <div class="product-slide__big-item">
                     <img src="img/product/3.jpg" alt="" />
                   </div>
-                  <div class="product-slide__big-item">
-                    <img src="img/product/4.jpg" alt="" />
-                  </div>
+
                 </div>
               </div>
               <div class="product-one__content">
@@ -894,13 +900,16 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+        <footer class="footer">
       <div class="container">
         <div class="footer-top">
           <div class="footer-top__item footer-top__contact">
-            <a class="logo footer-top__logo" href="">
-              <img class="logo__img" src="img/logo.png" alt="" />
-            </a>
+
+           <a class="header__logo " href="index.html">
+            <img src="img/product/p324.png" alt="">
+            <h2 class="logo__title">Glee</h2>
+          </a>
+            <div class="wrapper-contact">
             <a class="footer-top__address"
               >No. 342 - London Oxford Street, 012 United States
             </a>
@@ -1044,6 +1053,7 @@
                 </a>
               </li>
             </ul>
+            </div>
           </div>
           <div class="footer-top__item footer-top__nav">
             <h6 class="footer-top__title">Useful Links</h6>
@@ -1100,7 +1110,7 @@
                 required
               />
               <button class="footer-top__form-btn" type="submit">
-                SUBSCRIBE
+                Subscribe
               </button>
             </form>
           </div>

@@ -145,7 +145,7 @@
     width: 100%;
 
   }
-}
+ }
  .contact__inner{
   display: block;
 
@@ -162,8 +162,8 @@
 
  }
  .product-one{
-  margin-top: 300px;
-  padding: 400px 0 100px;
+  margin-top: 100px;
+  padding: 40px 0 100px;
  &__inner{
    display: flex;
     flex-wrap: nowrap;
@@ -171,7 +171,7 @@
     align-items: flex-start;
  }
  &__content{
-  max-width: 550px;
+  max-width: 600px;
   width: 100%;
   margin-top: 30px;
  }
@@ -183,6 +183,8 @@
     margin: 0 auto;
   }
  }
+
+}
 }
 @media (max-width: 860px) {
 .double{
@@ -587,6 +589,6 @@
 
 }
 
-}
+
 
 

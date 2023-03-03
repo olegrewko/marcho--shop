@@ -1657,10 +1657,13 @@ text-transform: uppercase;
 
 //  }
  .product-one{
-  margin-top: 100px;
+  margin-top: 300px;
   &__inner{
+
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
+    align-items: flex-start;
   }
   &__box{
     display: flex;
@@ -1670,11 +1673,12 @@ text-transform: uppercase;
   &__slide{
     max-width: 570px;
     width: 100%;
-    margin-right: 50px;
+    margin-right: 30px;
   }
   &__content{
     max-width: 500px;
     width: 100%;
+
   }
   &__title{
     margin-bottom: 20px;
@@ -1866,7 +1870,7 @@ text-transform: uppercase;
     margin-right: 40px;
   }
   &__thumb-item{
-    width: 180px;
+    width: 140px;
     height: 140px;
     margin-bottom: 40px;
     cursor: pointer;
@@ -1877,12 +1881,13 @@ text-transform: uppercase;
     }
   }
   &__big{
-    width: 370px;
-    height: 530px;
+    max-width: 570px;
+    width: 100%;
+
      img{
 
-      width: 370px;
-      height: 530px;
+      width: 400px;
+      height: 500px;
       object-fit: cover;
     }
   }

@@ -161,16 +161,22 @@
   }
 
  }
- .product-one__inner{
-  display: flex;
+ .product-one{
+  margin-top: 300px;
+  padding: 400px 0 100px;
+ &__inner{
+   display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
  }
- .product-one__content{
-  max-width: 450px;
+ &__content{
+  max-width: 550px;
   width: 100%;
   margin-top: 30px;
  }
  .product-slide__big{
-  max-width: 450px;
+  max-width: 400px;
   width: 100%;
   img{
     width: auto;
@@ -494,15 +500,15 @@
  #map{
     height: 250px;
   }
- .product-slide__big{
-  padding: 20px 0;
-  img{
-    height: 400px;
-  }
- }
- .product-one__item-btn{
-  margin-left: 0;
- }
+//  .product-slide__big{
+//   padding: 20px 0;
+//   img{
+//     height: 400px;
+//   }
+//  }
+//  .product-one__item-btn{
+//   margin-left: 0;
+//  }
  .product-tabs__top-item{
   font-family: 'Montserrat';
   font-size: 16px;
@@ -581,6 +587,6 @@
 
 }
 
-
+}
 
 

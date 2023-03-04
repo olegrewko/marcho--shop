@@ -1715,8 +1715,8 @@ text-transform: uppercase;
       font-size: 18px;
     }
   }
-   &__item-btn{
-            max-width: 150px;
+   &__btn{
+            max-width: 250px;
             margin-left: 15px;
             width: 100%;
             height: 50px;
@@ -1724,7 +1724,7 @@ text-transform: uppercase;
             font-weight: 400;
             font-size: 14px;
             line-height: 16px;
-            // padding: 11px 15px;
+
             background-color: $accent-color;
             text-align: center;
             letter-spacing: 2px;
@@ -1741,7 +1741,7 @@ text-transform: uppercase;
 
                 }
 
- }
+          }
 }
  .jq-number__field {
     width: 114px;

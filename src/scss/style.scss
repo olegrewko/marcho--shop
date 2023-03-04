@@ -607,8 +607,6 @@ margin-bottom: 0;
 
 		// .video-fashion__play
 
-		&__play {
-		}
 
 		// .video-fashion__img
 
@@ -1657,29 +1655,32 @@ text-transform: uppercase;
 
 //  }
  .product-one{
-  margin-top: 300px;
-  &__inner{
+  margin-top: 100px;
+  padding: 40px 0 100px;
+ &__inner{
 
-    display: flex;
+   display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    align-items: flex-start;
-  }
+    align-items: center;
+ }
+ &__content{
+  max-width: 600px;
+  width: 100%;
+
+ }
+ &__slide{
+  max-width: 530px;
+  width: 100%;
+  margin-right: 30px;
+ }
   &__box{
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
   }
-  &__slide{
-    max-width: 570px;
-    width: 100%;
-    margin-right: 30px;
-  }
-  &__content{
-    max-width: 500px;
-    width: 100%;
 
-  }
+
   &__title{
     margin-bottom: 20px;
     color: $title;
@@ -1710,7 +1711,7 @@ text-transform: uppercase;
     span{
       display: block;
       color: $title;
-      @extend %roboto-400;
+
       font-size: 18px;
     }
   }
@@ -1731,15 +1732,17 @@ text-transform: uppercase;
             color: #FFFFFF;
             cursor: pointer;
             margin-top: 0px;
-            @extend %roboto-400;
+
             transition: all .4s;
             &:hover{
-            background-color: rgb(178, 74, 88);
-            box-shadow: 0px 7px 20px 0px rgba(255, 17, 48, 0.3);
+            background-color: $accent;
+            transition: all .4s;
 
-    }
+
+                }
 
  }
+}
  .jq-number__field {
     width: 114px;
     border: 1px solid #ccc;
@@ -1818,7 +1821,7 @@ text-transform: uppercase;
 
  }
 }
-}
+
 
 .product-info {
 

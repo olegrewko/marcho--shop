@@ -1715,7 +1715,8 @@ text-transform: uppercase;
       font-size: 18px;
     }
   }
-   &__btn{
+}
+.product-one__btn{
             max-width: 250px;
             margin-left: 15px;
             width: 100%;
@@ -1723,7 +1724,7 @@ text-transform: uppercase;
             font-style: normal;
             font-weight: 400;
             font-size: 14px;
-            line-height: 16px;
+            line-height: 14px;
 
             background-color: $accent-color;
             text-align: center;
@@ -1742,7 +1743,7 @@ text-transform: uppercase;
                 }
 
           }
-}
+
  .jq-number__field {
     width: 114px;
     border: 1px solid #ccc;
